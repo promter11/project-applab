@@ -11,7 +11,6 @@ gulp.task("build", (done) =>
   gulp.series(
     "clean-build",
     "sass",
-    "pug",
     "combine-scripts",
     "minify-html",
     "minify-css-libs",

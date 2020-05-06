@@ -4,8 +4,6 @@ const autoprefixer = require("gulp-autoprefixer");
 const concat = require("gulp-concat");
 
 gulp.task("build-app", (done) => {
-  const buildPug = gulp.src("./app/pug/**/*").pipe(gulp.dest("build/pug"));
-
   const buildExpandedCss = gulp
     .src("./app/scss/**/*.scss")
     .pipe(sass({ outputStyle: "expanded" }).on("error", sass.logError))

@@ -5,13 +5,90 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header,
+section,
+footer {
+  padding: 90px 0;
+
+  @media (max-width: 768px) {
+    padding: 40px 0;
+  }
+}
+
+h1 {
+  font-size: 60px;
+
+  @media (max-width: 768px) {
+    font-size: 40px;
+  }
+}
+
+h2 {
+  font-size: 36px;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
+}
+
+h3 {
+  font-size: 20px;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+h4 {
+  font-size: 16px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: bold;
+  line-height: 1.2;
+
+  margin-bottom: 30px;
+
+  color: $brand-color;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+
+  margin-bottom: 40px;
+
+  color: $grey-color;
+}
+
 ul {
   list-style-type: none;
 }
 
-a,
-a:hover {
+a {
+  font-weight: 600;
   text-decoration: none;
+
+  transition: all 0.25s ease-in-out;
+
+  color: $button-color;
+
+  &:hover {
+    text-decoration: none;
+
+    color: $brand-color;
+  }
 }
 
 img {
@@ -22,9 +99,31 @@ img {
 button,
 input,
 textarea {
+  font-family: "Poppins", sans-serif;
+
   outline: none;
 }
 
 button {
+  display: block;
+
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.2;
+
+  padding: 20px 40px;
+
+  border: 0;
+  border-radius: 32px;
+
   cursor: pointer;
+
+  transition: all 0.25s ease-in-out;
+
+  background-color: $button-color;
+  color: #fff;
+
+  &:hover {
+    background-color: $brand-color;
+  }
 }
