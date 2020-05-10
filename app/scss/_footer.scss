@@ -1,0 +1,54 @@
+.footer {
+  background-color: $footer-bg;
+
+  &-list {
+    &__item {
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+    }
+
+    &__link {
+      text-transform: capitalize;
+
+      color: #fff;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  .social-list {
+    &__item {
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+
+    &__svg {
+      width: 30px;
+      height: auto;
+
+      &:hover {
+        path {
+          opacity: 1;
+        }
+      }
+
+      path {
+        opacity: 0.1;
+
+        transition: opacity 0.25s ease-in-out;
+
+        fill: #fff;
+      }
+    }
+  }
+
+  &__text {
+    opacity: 0.1;
+
+    color: #fff;
+  }
+}

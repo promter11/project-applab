@@ -1,0 +1,49 @@
+.faq {
+  &__title,
+  &__desc {
+    max-width: 660px;
+
+    margin: 0 auto 40px auto;
+  }
+
+  .accordion {
+    .card {
+      border: 0;
+
+      &-header {
+        padding: 0;
+
+        border: 0;
+
+        button {
+          width: 100%;
+
+          font-weight: bold;
+          text-decoration: none;
+          text-align: left;
+
+          padding: 20px 40px;
+
+          background-color: transparent;
+          color: $brand-color;
+        }
+      }
+
+      &-body {
+        padding: 20px 40px;
+
+        border-top: 1px solid $border-color;
+
+        background-color: $accordion-color;
+
+        &__text {
+          margin: 0;
+        }
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

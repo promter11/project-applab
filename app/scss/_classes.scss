@@ -1,6 +1,11 @@
 .container {
   max-width: calc(1170px + 30px);
+}
 
-  margin: 0 auto;
-  padding: 0 15px;
+.border-right {
+  border-right: 1px solid $border-color;
+
+  @media (max-width: 768px) {
+    border: 0;
+  }
 }

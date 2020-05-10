@@ -7,11 +7,6 @@
 
     <title>AppLab</title>
 
-    <script
-      src="https://kit.fontawesome.com/322c011d41.js"
-      crossorigin="anonymous"
-    ></script>
-
     <link rel="icon" href="../favicon.png" />
 
     <link rel="stylesheet" href="../libs/libs.min.css" />
@@ -20,16 +15,14 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="row justify-content-between align-items-center mb-5">
-          <div class="col-6 col-md-4">
+        <div class="row mb-5">
+          <div class="col-12 d-flex justify-content-between align-items-center">
             <a class="header__link" href="/">
               <img class="header__icon" src="../img/png/logo.png" alt="Logo" />
             </a>
-          </div>
-          <div class="col-8 d-none d-md-block">
             <nav class="header-nav">
               <ul
-                class="header-list d-flex justify-content-end align-items-center"
+                class="header-list d-none d-lg-flex justify-content-end align-items-center mb-0"
               >
                 <li class="header-list__item">
                   <a class="header-list__link" href="#">Home</a>
@@ -53,9 +46,7 @@
                 </li>
               </ul>
             </nav>
-          </div>
-          <div class="col-6 col-md-2 d-flex d-md-none justify-content-end">
-            <div class="header-burger">
+            <div class="header-burger d-block d-lg-none">
               <div class="header-burger__line"></div>
               <div class="header-burger__line"></div>
               <div class="header-burger__line"></div>
@@ -65,7 +56,11 @@
         <div class="row justify-content-between align-items-center">
           <div class="col-12 col-md-6 mb-5 mb-md-0">
             <div class="header-badge d-flex align-items-center mb-3">
-              <i class="header-badge__icon fas fa-check"></i>
+              <img
+                class="header-badge__icon"
+                src="../img/svg/icons/check-mark.svg"
+                alt="Mark"
+              />
               <span class="header-badge__text"
                 >#1 Editors Choice App of 2020</span
               >
@@ -75,8 +70,10 @@
               Increase productivity with a simple to-do app. App for managing
               your personal budgets.
             </p>
-            <div class="header-wrapper d-flex flex-wrap align-items-center">
-              <button class="header__button mr-5">
+            <div
+              class="header-wrapper d-block d-sm-flex flex-wrap align-items-center"
+            >
+              <button class="header__button mr-0 mr-sm-5 mb-5 mb-sm-0">
                 Try for free
               </button>
               <a class="header__link" href="/">Watch demo video</a>
@@ -92,6 +89,842 @@
         </div>
       </div>
     </header>
+    <main class="main">
+      <section class="partners">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12">
+              <h4 class="partners__title text-center">
+                Trusted by companies like
+              </h4>
+            </div>
+            <div class="col-12 col-sm-6 col-md text-center">
+              <img
+                class="partners__img mb-5 mb-md-0"
+                src="../img/png/companies/company-img.png"
+                alt="Partner"
+              />
+            </div>
+            <div class="col-12 col-sm-6 col-md text-center">
+              <img
+                class="partners__img mb-5 mb-md-0"
+                src="../img/png/companies/company-img-2.png"
+                alt="Partner"
+              />
+            </div>
+            <div class="col-12 col-sm-6 col-md text-center">
+              <img
+                class="partners__img mb-5 mb-md-0"
+                src="../img/png/companies/company-img-3.png"
+                alt="Partner"
+              />
+            </div>
+            <div class="col-12 col-sm-6 col-md text-center">
+              <img
+                class="partners__img mb-5 mb-md-0"
+                src="../img/png/companies/company-img-4.png"
+                alt="Partner"
+              />
+            </div>
+            <div class="col-12 col-sm-6 col-md text-center">
+              <img
+                class="partners__img"
+                src="../img/png/companies/company-img-5.png"
+                alt="Partner"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="features">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6 pr-md-5 text-center">
+              <img
+                class="features__image"
+                src="../img/png/illustrations/illustration.png"
+                alt="Application"
+              />
+            </div>
+            <div class="col-12 col-md-6 pl-md-5">
+              <h2 class="features__title">Awesome apps features</h2>
+              <p class="features__desc">
+                Increase productivity with a simple to-do app. App for managing
+                your personal budgets.
+              </p>
+              <div
+                class="features-block features-block--red d-flex align-items-center mb-5"
+              >
+                <div class="block-img">
+                  <img
+                    class="block-img__icon"
+                    src="../img/svg/icons/features/speed-icon.svg"
+                    alt="Speed"
+                  />
+                </div>
+                <div class="block-info ml-5">
+                  <h3 class="block-info__title">Fast performance</h3>
+                  <p class="block-info__text mb-0">
+                    Get your blood tests delivered at home collect a sample from
+                    the news your blood tests.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="features-block features-block--blue d-flex align-items-center mb-5"
+              >
+                <div class="block-img">
+                  <img
+                    class="block-img__icon"
+                    src="../img/svg/icons/features/prototype-icon.svg"
+                    alt="Speed"
+                  />
+                </div>
+                <div class="block-info ml-5">
+                  <h3 class="block-info__title">Prototyping</h3>
+                  <p class="block-info__text mb-0">
+                    Get your blood tests delivered at home collect a sample from
+                    the news your blood tests.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="features-block features-block--green d-flex align-items-center"
+              >
+                <div class="block-img">
+                  <img
+                    class="block-img__icon"
+                    src="../img/svg/icons/features/vector-icon.svg"
+                    alt="Speed"
+                  />
+                </div>
+                <div class="block-info ml-5">
+                  <h3 class="block-info__title">Vector editing</h3>
+                  <p class="block-info__text mb-0">
+                    Get your blood tests delivered at home collect a sample from
+                    the news your blood tests.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="container">
+          <div class="row align-items-center pb-0 pb-md-5">
+            <div class="col-12 col-md-6 pr-md-5 border-right">
+              <h2 class="advantages__title mb-5 mb-md-0">
+                Smart jackpots that you may love this anytime & anywhere
+              </h2>
+            </div>
+            <div class="col-12 col-md-6 pl-md-5">
+              <p class="advantages__desc mb-0">
+                The rise of mobile devices transforms the way we consume
+                information entirely and the world's most elevant channels such
+                as Facebook.
+              </p>
+            </div>
+          </div>
+          <div class="row pt-5">
+            <div class="col-12 col-sm-6 col-md-4 mb-5 mb-md-0">
+              <div class="advantages-block advantages-block--red">
+                <div class="block-img mb-5">
+                  <img
+                    class="block-img__icon"
+                    src="../img/svg/icons/advantages/payouts-icon.svg"
+                    alt="Payouts"
+                  />
+                </div>
+                <h3 class="advantages-block__title">Automatic Payouts</h3>
+                <p class="advantages-block__text mb-0">
+                  Get your blood tests delivered at home collect a sample from
+                  the news your blood tests.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-5 mb-md-0">
+              <div class="advantages-block advantages-block--blue">
+                <div class="block-img mb-5">
+                  <img
+                    class="block-img__icon"
+                    src="../img/svg/icons/advantages/networks-icon.svg"
+                    alt="Payouts"
+                  />
+                </div>
+                <h3 class="advantages-block__title">Network effect</h3>
+                <p class="advantages-block__text mb-0">
+                  Get your blood tests delivered at home collect a sample from
+                  the news your blood tests.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="advantages-block advantages-block--green">
+                <div class="block-img mb-5">
+                  <img
+                    class="block-img__icon"
+                    src="../img/svg/icons/advantages/rewards-icon.svg"
+                    alt="Payouts"
+                  />
+                </div>
+                <h3 class="advantages-block__title">Bigger rewards method</h3>
+                <p class="advantages-block__text mb-0">
+                  Get your blood tests delivered at home collect a sample from
+                  the news your blood tests.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="platforms">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6 mb-5 mb-md-0 pr-md-5 text-center">
+              <img
+                class="platforms__img"
+                src="../img/png/illustrations/illustration-2.png"
+                alt="Platforms"
+              />
+            </div>
+            <div class="col-12 col-md-6 pl-md-5">
+              <h2 class="platforms__title">
+                Designed & built by the latest code integration
+              </h2>
+              <p class="platforms__desc">
+                The rise of mobile devices transforms the way we consume
+                information entirely and the world's most elevant channels such
+                as Facebook.
+              </p>
+              <button class="platforms__button" type="button">
+                Learn more
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="plus">
+        <div class="container">
+          <div class="row mb-0 mb-md-5">
+            <div class="col-12 text-center">
+              <h2 class="plus__title">Why you should choose our app</h2>
+              <p class="plus__desc">
+                The rise of mobile devices transforms the way we consume
+                information entirely and the world's most elevant channels such
+                as Facebook.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 mb-5 text-center">
+              <div class="plus-block plus-block--pink">
+                <div class="block-img">
+                  <img
+                    class="block-img__icon"
+                    src="../img/svg/icons/plus/development-icon.svg"
+                    alt="Development"
+                  />
+                </div>
+                <h3 class="plus-block__title">App development</h3>
+                <p class="plus-block__text mb-0">
+                  Get your blood tests delivered at home collect a sample from
+                  the news your blood tests.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-5 text-center">
+              <div class="plus-block plus-block--lightblue">
+                <div class="block-img">
+                  <img
+                    class="block-img__icon"
+                    src="../img/svg/icons/plus/award-icon.svg"
+                    alt="Award"
+                  />
+                </div>
+                <h3 class="plus-block__title">10 times award</h3>
+                <p class="plus-block__text mb-0">
+                  Get your blood tests delivered at home collect a sample from
+                  the news your blood tests.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-5 text-center">
+              <div class="plus-block plus-block--amber">
+                <div class="block-img">
+                  <img
+                    class="block-img__icon"
+                    src="../img/svg/icons/plus/storage-icon.svg"
+                    alt="Storage"
+                  />
+                </div>
+                <h3 class="plus-block__title">Cloud storage</h3>
+                <p class="plus-block__text mb-0">
+                  Get your blood tests delivered at home collect a sample from
+                  the news your blood tests.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-5 text-center">
+              <div class="plus-block plus-block--green">
+                <div class="block-img">
+                  <img
+                    class="block-img__icon"
+                    src="../img/svg/icons/plus/customize-icon.svg"
+                    alt="Customize"
+                  />
+                </div>
+                <h3 class="plus-block__title">Customization</h3>
+                <p class="plus-block__text mb-0">
+                  Get your blood tests delivered at home collect a sample from
+                  the news your blood tests.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-5 text-center">
+              <div class="plus-block plus-block--lightgrey">
+                <div class="block-img">
+                  <img
+                    class="block-img__icon"
+                    src="../img/svg/icons/plus/ux-icon.svg"
+                    alt="UX"
+                  />
+                </div>
+                <h3 class="plus-block__title">UX planning</h3>
+                <p class="plus-block__text mb-0">
+                  Get your blood tests delivered at home collect a sample from
+                  the news your blood tests.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-5 text-center">
+              <div class="plus-block plus-block--coral">
+                <div class="block-img">
+                  <img
+                    class="block-img__icon"
+                    src="../img/svg/icons/plus/support-icon.svg"
+                    alt="Support"
+                  />
+                </div>
+                <h3 class="plus-block__title">Customer Support</h3>
+                <p class="plus-block__text mb-0">
+                  Get your blood tests delivered at home collect a sample from
+                  the news your blood tests.
+                </p>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="plus__button mx-auto" type="button">
+                See all
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="plans">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h2 class="plans__title">
+                Get awesome features, without extra charges
+              </h2>
+              <p class="plans__desc">
+                The rise of mobile devices transforms the way we consume
+                information entirely and the world's most elevant channels such
+                as Facebook.
+              </p>
+              <div class="plans-switch">
+                <span class="plans-switch__item plans-switch__item--active"
+                  >Monthly</span
+                >
+                <span class="plans-switch__item">Annually</span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col-12 d-block d-md-flex justify-content-center align-items-center"
+            >
+              <div
+                class="plans-block mr-0 mr-md-3 mb-5 mb-md-0 text-center mx-auto"
+              >
+                <div class="block-header">
+                  <span class="block-header__price"><b>$0</b> / month</span>
+                  <h3 class="block-header__title mb-0">Business class</h3>
+                  <p class="block-header__text mb-0">
+                    For small teams or office
+                  </p>
+                </div>
+                <div class="block-body">
+                  <ul class="body-list">
+                    <li class="body-list__item">Drag & drop builder</li>
+                    <li class="body-list__item">1000's of templates</li>
+                    <li class="body-list__item">Blog support tools</li>
+                    <li class="body-list__item">Ecommerce store</li>
+                    <li class="body-list__item">
+                      <button class="body-list__button mx-auto" type="button">
+                        Start free trial
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="plans-block plans-block--active ml-0 ml-md-3 text-center mx-auto"
+              >
+                <div class="block-header">
+                  <span class="block-header__price"><b>$99</b> / month</span>
+                  <h3 class="block-header__title mb-0">Pro master</h3>
+                  <p class="block-header__text mb-0">For best opportunities</p>
+                </div>
+                <div class="block-body">
+                  <ul class="body-list">
+                    <li class="body-list__item">Drag & drop builder</li>
+                    <li class="body-list__item">1000's of templates</li>
+                    <li class="body-list__item">Blog support tools</li>
+                    <li class="body-list__item">Ecommerce store</li>
+                    <li class="body-list__item">
+                      <button class="body-list__button mx-auto" type="button">
+                        Subscribe now
+                      </button>
+                    </li>
+                    <li class="body-list__item">
+                      <a class="body-list__link" href="#"
+                        >Or start 14 days trial</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="faq">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h2 class="faq__title">Frequently asked questions</h2>
+              <p class="faq__desc">
+                The rise of mobile devices transforms the way we consume
+                information entirely and the world's most elevant channels such
+                as Facebook.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="accordion" id="accordion">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        How to contact with riders emergency?
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseOne"
+                    class="collapse show"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      <p class="card-body__text">
+                        Leverage agile frameworks to provide a robust synopsis
+                        for high level overviews. Iterative approaches to
+                        corporate strategy foster collaborative thinking to
+                        further the overall value proposition. Organically grow
+                        the holistic world view of disruptive innovation via
+                        workplace diversity and empowerment.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        App installation failed, how to update system
+                        information?
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseTwo"
+                    class="collapse"
+                    aria-labelledby="headingTwo"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      <p class="card-body__text">
+                        Leverage agile frameworks to provide a robust synopsis
+                        for high level overviews. Iterative approaches to
+                        corporate strategy foster collaborative thinking to
+                        further the overall value proposition.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        Website reponse taking time, how to improve?
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseThree"
+                    class="collapse"
+                    aria-labelledby="headingThree"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      Leverage agile frameworks to provide a robust synopsis for
+                      high level overviews.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingFour">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseFour"
+                        aria-expanded="false"
+                        aria-controls="collapseFour"
+                      >
+                        New update fixed all bug and issues
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseFour"
+                    class="collapse"
+                    aria-labelledby="headingFour"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      <p class="card-body__text">
+                        Leverage agile frameworks to provide a robust synopsis
+                        for high level overviews. Iterative approaches to
+                        corporate strategy foster collaborative thinking to
+                        further the overall value proposition.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingFive">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseFive"
+                        aria-expanded="false"
+                        aria-controls="collapseFive"
+                      >
+                        How to contact with riders emergency?
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseFive"
+                    class="collapse"
+                    aria-labelledby="headingFive"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      <p class="card-body__text">
+                        Organically grow the holistic world view of disruptive
+                        innovation via workplace diversity and empowerment.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slider">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6 pr-md-5">
+              <img class="slider__img" src="../img/png/map.png" alt="Map" />
+            </div>
+            <div class="col-12 col-md-6 pl-md-5">
+              <h2 class="slider__title">
+                Meet Client Satisfaction by using product
+              </h2>
+              <p class="slider__desc">
+                The rise of mobile devices transforms the way we consume
+                information entirely and the world's most elevant channels such
+                as Facebook.
+              </p>
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      class="swiper-slide__img d-block mb-4"
+                      src="../img/png/stars.png"
+                      alt="Stars"
+                    />
+                    <h3 class="swiper-slide__title">
+                      User friendly & Customizable
+                    </h3>
+                    <p class="swiper-slide__text">
+                      Bring to the table win-win survival strategies to ensure
+                      proactive domination. At the end of the day, going
+                      forward, a new normal that has evolved from generation X
+                      is one the runway heading towards a streamlined cloud
+                      solution. User generated content in real-time will have
+                      multiple touchpoints for offshoring.
+                    </p>
+                    <div class="swiper-block d-flex align-items-center">
+                      <div class="block-img">
+                        <img
+                          class="block-img__img"
+                          src="../img/png/slider/img-1.png"
+                          alt="People"
+                        />
+                      </div>
+                      <div class="block-info ml-4">
+                        <h4 class="block-info__title mb-2">Selena Williams</h4>
+                        <p class="block-info__text mb-0">CEO of Pixler Lab</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="swiper-slide__img d-block mb-4"
+                      src="../img/png/stars.png"
+                      alt="Stars"
+                    />
+                    <h3 class="swiper-slide__title">
+                      User friendly
+                    </h3>
+                    <p class="swiper-slide__text">
+                      Bring to the table win-win survival strategies to ensure
+                      proactive domination.
+                    </p>
+                    <div class="swiper-block d-flex align-items-center">
+                      <div class="block-img">
+                        <img
+                          class="block-img__img"
+                          src="../img/png/slider/img-2.png"
+                          alt="People"
+                        />
+                      </div>
+                      <div class="block-info ml-4">
+                        <h4 class="block-info__title mb-2">Zoltan Nemeth</h4>
+                        <p class="block-info__text mb-0">Web designer</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="swiper-slide__img d-block mb-4"
+                      src="../img/png/stars.png"
+                      alt="Stars"
+                    />
+                    <h3 class="swiper-slide__title">
+                      Customizable
+                    </h3>
+                    <p class="swiper-slide__text">
+                      At the end of the day, going forward, a new normal that
+                      has evolved from generation X is one the runway heading
+                      towards a streamlined cloud solution. User generated
+                      content in real-time will have multiple touchpoints for
+                      offshoring.
+                    </p>
+                    <div class="swiper-block d-flex align-items-center">
+                      <div class="block-img">
+                        <img
+                          class="block-img__img"
+                          src="../img/png/slider/img-3.png"
+                          alt="People"
+                        />
+                      </div>
+                      <div class="block-info ml-4">
+                        <h4 class="block-info__title mb-2">Sarah Moar</h4>
+                        <p class="block-info__text mb-0">Business developer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-elements">
+                  <div class="swiper-button-prev mr-3"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="download">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6">
+              <h2 class="download__title">Download our App now !</h2>
+              <p class="download__desc">
+                The rise of mobile devices transforms the way we consume
+                information entirely and the world's most elevant channels such
+                as Facebook.
+              </p>
+              <div class="download-wrapper d-flex">
+                <a class="download-wrapper__link mr-4" href="#">
+                  <img
+                    class="download-wrapper__img"
+                    src="../img/png/store/google-play.png"
+                    alt="Google Play"
+                  />
+                </a>
+                <a class="download-wrapper__link" href="#">
+                  <img
+                    class="download-wrapper__img"
+                    src="../img/png/store/app-store.png"
+                    alt="App Store"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <img
+                class="download__img"
+                src="../img/png/illustrations/illustration-3.png"
+                alt="Illustration"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <a class="footer__link d-block mb-5" href="/">
+              <img
+                class="footer__icon"
+                src="../img/png/footer-logo.png"
+                alt="Logo"
+              />
+            </a>
+            <ul class="footer-list d-flex justify-content-center mb-5">
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#">Home</a>
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#">Key features</a>
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#">Pricing</a>
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#">Testimonial</a>
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#">FAQ</a>
+              </li>
+            </ul>
+            <ul class="social-list d-flex justify-content-center mb-5">
+              <li class="social-list__item">
+                <a class="social-list__link" href="#">
+                  <svg
+                    class="social-list__svg"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link" href="#">
+                  <svg
+                    class="social-list__svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <g>
+                      <g>
+                        <path
+                          d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+                          c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+                          c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+                          c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+                          c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+                          c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+                          C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+                          C480.224,136.96,497.728,118.496,512,97.248z"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link" href="#">
+                  <svg
+                    class="social-list__svg"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="m.096 11.243c.267.777 1.023 1.286 1.8 1.318.365.054.643-.086 3.092-.9l1.623 4.822-2.432.809c-1.018.333-1.559 1.441-1.232 2.46.267.777 1.023 1.286 1.8 1.318.365.054.643-.086 3.092-.901l.841 2.518c.317.905 1.323 1.553 2.464 1.226 1.023-.333 1.559-1.436 1.232-2.46l-.841-2.518 5.014-1.677.841 2.518c.317.905 1.323 1.553 2.464 1.226 1.023-.333 1.559-1.436 1.232-2.46l-.841-2.518 2.432-.809c1.018-.321 1.559-1.431 1.226-2.448l-.001-.001c-.333-1.018-1.441-1.559-2.464-1.226l-2.432.809-1.623-4.822 2.432-.809c1.023-.333 1.559-1.436 1.232-2.46-.333-1.018-1.441-1.559-2.464-1.226l-2.433.81-.841-2.518c-.333-1.018-1.441-1.559-2.464-1.226s-1.559 1.436-1.232 2.46l.841 2.518-5.004 1.671-.841-2.518c-.333-1.019-1.441-1.559-2.464-1.227-1.023.333-1.559 1.436-1.232 2.46l.841 2.518-2.426.803c-1.023.333-1.559 1.436-1.232 2.46zm13.578-2.455 1.623 4.833-5.009 1.677-1.623-4.832z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link" href="#">
+                  <svg
+                    class="social-list__svg"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <p class="footer__text mb-0">
+              Copyright&copy; Arifur Rahman Tushar 2019. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="../libs/libs.min.js"></script>
     <script src="../js/scripts.min.js"></script>

@@ -11,6 +11,10 @@
 
     &__link {
       color: $brand-color;
+
+      &:hover {
+        color: $button-color;
+      }
     }
   }
 
@@ -32,12 +36,18 @@
   }
 
   &-badge {
+    width: 310px;
+
     border-radius: 20px;
 
     background-color: $badge-color;
 
+    @media (max-width: 576px) {
+      width: 280px;
+    }
+
     &__icon {
-      padding: 12px 14px;
+      padding: 8px 12px;
 
       border-radius: 20px;
 

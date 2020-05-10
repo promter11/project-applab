@@ -19,6 +19,18 @@ footer {
   }
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-weight: bold;
+  line-height: 1.2;
+
+  margin-bottom: 40px;
+
+  color: $brand-color;
+}
+
 h1 {
   font-size: 60px;
 
@@ -37,6 +49,9 @@ h2 {
 
 h3 {
   font-size: 20px;
+  text-transform: capitalize;
+
+  margin-bottom: 20px;
 
   @media (max-width: 768px) {
     font-size: 16px;
@@ -49,18 +64,6 @@ h4 {
   @media (max-width: 768px) {
     font-size: 14px;
   }
-}
-
-h1,
-h2,
-h3,
-h4 {
-  font-weight: bold;
-  line-height: 1.2;
-
-  margin-bottom: 30px;
-
-  color: $brand-color;
 }
 
 p {
@@ -116,6 +119,7 @@ button {
   border: 0;
   border-radius: 32px;
 
+  outline: none;
   cursor: pointer;
 
   transition: all 0.25s ease-in-out;
