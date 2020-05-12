@@ -1,18 +1,18 @@
 .plus {
   &__title {
-    max-width: 440px;
+    @include set-width(430px, 768px);
 
     margin: 0 auto 40px auto;
   }
 
   &__desc {
-    max-width: 660px;
+    @include set-width(660px, 768px);
 
     margin: 0 auto 40px auto;
   }
 
   &-block {
-    max-width: 260px;
+    @include set-width(260px, 768px);
 
     margin: 0 auto;
 
@@ -54,13 +54,13 @@
   }
 
   .block-img {
-    width: 90px;
-    height: 90px;
+    @extend .img-size;
 
-    padding: 15px;
     margin: 0 auto 20px auto;
 
-    border-radius: 50%;
+    @media (max-width: 768px) {
+      margin: 0 0 40px 0;
+    }
 
     &__icon {
       width: 100%;

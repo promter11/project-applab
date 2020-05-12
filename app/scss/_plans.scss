@@ -1,7 +1,13 @@
 .plans {
+  &-row {
+    &--disabled {
+      display: none;
+    }
+  }
+
   &__title,
   &__desc {
-    max-width: 660px;
+    @include set-width(660px, 768px);
 
     margin: 0 auto 40px auto;
   }
@@ -30,6 +36,8 @@
       &--active {
         font-weight: bold;
 
+        transition: all 0.5s ease-in-out;
+
         background-color: $button-color;
         color: #fff;
       }
@@ -37,7 +45,8 @@
   }
 
   &-block {
-    width: 300px;
+    max-width: 290px;
+    width: 100%;
 
     border-radius: 8px;
 

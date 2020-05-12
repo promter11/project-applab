@@ -1,6 +1,6 @@
 .platforms {
   &__title,
   &__desc {
-    max-width: 410px;
+    @include set-width(410px, 768px);
   }
 }

@@ -1,10 +1,10 @@
 .features {
   &__desc {
-    max-width: 430px;
+    @include set-width(430px, 768px);
   }
 
   &-block {
-    max-width: 410px;
+    @include set-width(410px, 768px);
 
     &--red {
       .block-img {
@@ -38,9 +38,7 @@
   }
 
   .block-img {
-    padding: 15px;
-
-    border-radius: 50%;
+    @extend .img-size;
 
     &__icon {
       width: 100%;

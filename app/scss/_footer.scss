@@ -1,10 +1,32 @@
 .footer {
   background-color: $footer-bg;
 
+  &__link {
+    display: inline-block;
+
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  &__logo {
+    &--orange {
+      color: $orange-color;
+    }
+
+    &--white {
+      color: #fff;
+    }
+  }
+
   &-list {
     &__item {
       &:not(:last-child) {
         margin-right: 40px;
+
+        @media (max-width: 576px) {
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
       }
     }
 

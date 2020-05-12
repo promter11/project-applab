@@ -1,0 +1,16 @@
+@mixin set-width($width, $query) {
+  max-width: $width;
+
+  @media (max-width: $query) {
+    max-width: none;
+  }
+}
+
+@mixin set-position($value, $query) {
+  position: absolute;
+  #{$value}: 0;
+
+  @media (max-width: $query) {
+    position: static;
+  }
+}

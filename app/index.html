@@ -13,31 +13,34 @@
     <link rel="stylesheet" href="../css/main.min.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="home">
       <div class="container">
         <div class="row mb-5">
           <div class="col-12 d-flex justify-content-between align-items-center">
             <a class="header__link" href="/">
-              <img class="header__icon" src="../img/png/logo.png" alt="Logo" />
+              <span class="header__logo--orange">App</span>
+              <span class="header__logo--brand">Lab</span>
             </a>
             <nav class="header-nav">
               <ul
                 class="header-list d-none d-lg-flex justify-content-end align-items-center mb-0"
               >
                 <li class="header-list__item">
-                  <a class="header-list__link" href="#">Home</a>
+                  <a class="header-list__link" href="#home">Home</a>
                 </li>
                 <li class="header-list__item">
-                  <a class="header-list__link" href="#">Key Features</a>
+                  <a class="header-list__link" href="#features">Key Features</a>
                 </li>
                 <li class="header-list__item">
-                  <a class="header-list__link" href="#">Pricing</a>
+                  <a class="header-list__link" href="#pricing">Pricing</a>
                 </li>
                 <li class="header-list__item">
-                  <a class="header-list__link" href="#">Testimonial</a>
+                  <a class="header-list__link" href="#testimonial"
+                    >Testimonial</a
+                  >
                 </li>
                 <li class="header-list__item">
-                  <a class="header-list__link" href="#">FAQ</a>
+                  <a class="header-list__link" href="#faq">FAQ</a>
                 </li>
                 <li class="header-list__item">
                   <button class="header-list__button" type="button">
@@ -76,7 +79,13 @@
               <button class="header__button mr-0 mr-sm-5 mb-5 mb-sm-0">
                 Try for free
               </button>
-              <a class="header__link" href="/">Watch demo video</a>
+              <a
+                class="header__video-link"
+                href="/"
+                data-toggle="modal"
+                data-target="#videoModal"
+                >Watch demo video</a
+              >
             </div>
           </div>
           <div class="col-12 col-md-6">
@@ -136,7 +145,7 @@
           </div>
         </div>
       </section>
-      <section class="features">
+      <section class="features" id="features">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-12 col-md-6 pr-md-5 text-center">
@@ -304,10 +313,10 @@
           </div>
         </div>
       </section>
-      <section class="plus">
+      <section class="plus" id="testimonial">
         <div class="container">
           <div class="row mb-0 mb-md-5">
-            <div class="col-12 text-center">
+            <div class="col-12 text-left text-md-center">
               <h2 class="plus__title">Why you should choose our app</h2>
               <p class="plus__desc">
                 The rise of mobile devices transforms the way we consume
@@ -316,8 +325,8 @@
               </p>
             </div>
           </div>
-          <div class="row">
-            <div class="col-12 col-sm-6 col-md-4 mb-5 text-center">
+          <div class="row text-left text-md-center">
+            <div class="col-12 col-sm-6 col-md-4 mb-5">
               <div class="plus-block plus-block--pink">
                 <div class="block-img">
                   <img
@@ -333,7 +342,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 mb-5 text-center">
+            <div class="col-12 col-sm-6 col-md-4 mb-5">
               <div class="plus-block plus-block--lightblue">
                 <div class="block-img">
                   <img
@@ -349,7 +358,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 mb-5 text-center">
+            <div class="col-12 col-sm-6 col-md-4 mb-5">
               <div class="plus-block plus-block--amber">
                 <div class="block-img">
                   <img
@@ -365,7 +374,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 mb-5 text-center">
+            <div class="col-12 col-sm-6 col-md-4 mb-5">
               <div class="plus-block plus-block--green">
                 <div class="block-img">
                   <img
@@ -381,7 +390,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 mb-5 text-center">
+            <div class="col-12 col-sm-6 col-md-4 mb-5">
               <div class="plus-block plus-block--lightgrey">
                 <div class="block-img">
                   <img
@@ -397,7 +406,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 mb-5 text-center">
+            <div class="col-12 col-sm-6 col-md-4 mb-5">
               <div class="plus-block plus-block--coral">
                 <div class="block-img">
                   <img
@@ -414,17 +423,17 @@
               </div>
             </div>
             <div class="col-12">
-              <button class="plus__button mx-auto" type="button">
+              <button class="plus__button mx-0 mx-md-auto" type="button">
                 See all
               </button>
             </div>
           </div>
         </div>
       </section>
-      <section class="plans">
+      <section class="plans" id="pricing">
         <div class="container">
           <div class="row">
-            <div class="col-12 text-center">
+            <div class="col-12 text-left text-md-center">
               <h2 class="plans__title">
                 Get awesome features, without extra charges
               </h2>
@@ -433,7 +442,7 @@
                 information entirely and the world's most elevant channels such
                 as Facebook.
               </p>
-              <div class="plans-switch">
+              <div class="plans-switch text-center">
                 <span class="plans-switch__item plans-switch__item--active"
                   >Monthly</span
                 >
@@ -441,7 +450,7 @@
               </div>
             </div>
           </div>
-          <div class="row">
+          <div class="row plans-row">
             <div
               class="col-12 d-block d-md-flex justify-content-center align-items-center"
             >
@@ -498,12 +507,65 @@
               </div>
             </div>
           </div>
+          <div class="row plans-row plans-row--disabled">
+            <div
+              class="col-12 d-block d-md-flex justify-content-center align-items-center"
+            >
+              <div
+                class="plans-block mr-0 mr-md-3 mb-5 mb-md-0 text-center mx-auto"
+              >
+                <div class="block-header">
+                  <span class="block-header__price"><b>$0</b> per year</span>
+                  <h3 class="block-header__title mb-0">Business class</h3>
+                  <p class="block-header__text mb-0">
+                    For small teams or office
+                  </p>
+                </div>
+                <div class="block-body">
+                  <ul class="body-list">
+                    <li class="body-list__item">Drag & drop builder</li>
+                    <li class="body-list__item">1000's of templates</li>
+                    <li class="body-list__item">Blog support tools</li>
+                    <li class="body-list__item">Ecommerce store</li>
+                    <li class="body-list__item">
+                      <button class="body-list__button mx-auto" type="button">
+                        Start free trial
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="plans-block plans-block--active ml-0 ml-md-3 text-center mx-auto"
+              >
+                <div class="block-header">
+                  <span class="block-header__price"><b>$49</b> per year</span>
+                  <h3 class="block-header__title mb-0">Pro master</h3>
+                  <p class="block-header__text mb-0">For best opportunities</p>
+                </div>
+                <div class="block-body">
+                  <ul class="body-list">
+                    <li class="body-list__item">Drag & drop builder</li>
+                    <li class="body-list__item">Unlimited templates</li>
+                    <li class="body-list__item">Blog support tools</li>
+                    <li class="body-list__item">Ecommerce store</li>
+                    <li class="body-list__item">Exclusive features</li>
+                    <li class="body-list__item">
+                      <button class="body-list__button mx-auto" type="button">
+                        Subscribe now
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="faq">
+      <section class="faq" id="faq">
         <div class="container">
           <div class="row">
-            <div class="col-12 text-center">
+            <div class="col-12 text-left text-md-center">
               <h2 class="faq__title">Frequently asked questions</h2>
               <p class="faq__desc">
                 The rise of mobile devices transforms the way we consume
@@ -675,10 +737,10 @@
       <section class="slider">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-12 col-md-6 pr-md-5">
+            <div class="col-12 col-md-6 pr-md-5 mb-5 mb-md-0">
               <img class="slider__img" src="../img/png/map.png" alt="Map" />
             </div>
-            <div class="col-12 col-md-6 pl-md-5">
+            <div class="col-12 col-md-6 pl-md-5 ml-auto">
               <h2 class="slider__title">
                 Meet Client Satisfaction by using product
               </h2>
@@ -778,7 +840,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-elements">
+                <div class="swiper-elements d-none d-sm-flex">
                   <div class="swiper-button-prev mr-3"></div>
                   <div class="swiper-button-next"></div>
                 </div>
@@ -790,8 +852,8 @@
       <section class="download">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-12 col-md-6">
-              <h2 class="download__title">Download our App now !</h2>
+            <div class="col-12 col-md-6 mb-5 mb-md-0">
+              <h2 class="download__title">Download our App now!</h2>
               <p class="download__desc">
                 The rise of mobile devices transforms the way we consume
                 information entirely and the world's most elevant channels such
@@ -829,28 +891,29 @@
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <a class="footer__link d-block mb-5" href="/">
-              <img
-                class="footer__icon"
-                src="../img/png/footer-logo.png"
-                alt="Logo"
-              />
-            </a>
-            <ul class="footer-list d-flex justify-content-center mb-5">
+            <div class="footer-logo d-inline-block mb-5">
+              <a class="footer__link d-flex justify-content-center" href="/">
+                <span class="footer__logo--orange">App</span>
+                <span class="footer__logo--white">Lab</span>
+              </a>
+            </div>
+            <ul
+              class="footer-list d-flex flex-column flex-sm-row justify-content-center mb-5"
+            >
               <li class="footer-list__item">
-                <a class="footer-list__link" href="#">Home</a>
+                <a class="footer-list__link" href="#home">Home</a>
               </li>
               <li class="footer-list__item">
-                <a class="footer-list__link" href="#">Key features</a>
+                <a class="footer-list__link" href="#features">Key features</a>
               </li>
               <li class="footer-list__item">
-                <a class="footer-list__link" href="#">Pricing</a>
+                <a class="footer-list__link" href="#pricing">Pricing</a>
               </li>
               <li class="footer-list__item">
-                <a class="footer-list__link" href="#">Testimonial</a>
+                <a class="footer-list__link" href="#testimonial">Testimonial</a>
               </li>
               <li class="footer-list__item">
-                <a class="footer-list__link" href="#">FAQ</a>
+                <a class="footer-list__link" href="#faq">FAQ</a>
               </li>
             </ul>
             <ul class="social-list d-flex justify-content-center mb-5">
@@ -925,6 +988,30 @@
         </div>
       </div>
     </footer>
+
+    <div
+      class="modal fade"
+      id="videoModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="videoModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                class="embed-responsive-item"
+                src="https://www.youtube.com/embed/5qap5aO4i9A"
+                allowscriptaccess="always"
+                allow="autoplay"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="../libs/libs.min.js"></script>
     <script src="../js/scripts.min.js"></script>

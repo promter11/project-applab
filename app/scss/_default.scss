@@ -14,7 +14,11 @@ section,
 footer {
   padding: 90px 0;
 
-  @media (max-width: 768px) {
+  @media (max-width: 576px) {
+    padding: 20px 0;
+  }
+
+  @media (min-width: 576px) and (max-width: 992px) {
     padding: 40px 0;
   }
 }

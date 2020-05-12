@@ -1,7 +1,13 @@
 .slider {
+  .row {
+    .col-12:first-child {
+      @include set-position("left", 768px);
+    }
+  }
+
   &__title,
   &__desc {
-    max-width: 510px;
+    @include set-width(510px, 768px);
   }
 
   .swiper-elements {
@@ -39,10 +45,9 @@
   .swiper-block {
     .block-img {
       &__img {
-        width: 90px;
-        height: 90px;
+        @extend .img-size;
 
-        border-radius: 50%;
+        padding: 0;
 
         object-fit: cover;
       }

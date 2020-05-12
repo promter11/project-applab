@@ -1,7 +1,7 @@
 .faq {
   &__title,
   &__desc {
-    max-width: 660px;
+    @include set-width(660px, 768px);
 
     margin: 0 auto 40px auto;
   }
@@ -26,6 +26,10 @@
 
           background-color: transparent;
           color: $brand-color;
+
+          @media (max-width: 576px) {
+            padding: 20px;
+          }
         }
       }
 
@@ -35,6 +39,10 @@
         border-top: 1px solid $border-color;
 
         background-color: $accordion-color;
+
+        @media (max-width: 576px) {
+          padding: 20px;
+        }
 
         &__text {
           margin: 0;

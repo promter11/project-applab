@@ -2,6 +2,23 @@
   background: $header-bg url("../img/png/header/header-bg.png") no-repeat bottom
     center / cover;
 
+  &__link {
+    display: flex;
+
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  &__logo {
+    &--orange {
+      color: $orange-color;
+    }
+
+    &--brand {
+      color: $brand-color;
+    }
+  }
+
   &-list {
     &__item {
       &:not(:last-child) {
