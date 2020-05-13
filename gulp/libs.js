@@ -8,6 +8,7 @@ gulp.task("minify-css-libs", () => {
     .src([
       "./app/libs/bootstrap/bootstrap.min.css",
       "./app/libs/swiper/swiper.min.css",
+      "./app/libs/aos/aos.min.css",
     ])
     .pipe(cleanCSS())
     .pipe(concat("libs.min.css"))
@@ -20,6 +21,7 @@ gulp.task("minify-js-libs", () => {
       "./app/libs/jquery/jquery-3.4.1.min.js",
       "./app/libs/bootstrap/bootstrap.min.js",
       "./app/libs/swiper/swiper.min.js",
+      "./app/libs/aos/aos.min.js",
     ])
     .pipe(uglify())
     .pipe(concat("libs.min.js"))

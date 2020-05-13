@@ -1,10 +1,4 @@
 .slider {
-  .row {
-    .col-12:first-child {
-      @include set-position("left", 768px);
-    }
-  }
-
   &__title,
   &__desc {
     @include set-width(510px, 768px);
