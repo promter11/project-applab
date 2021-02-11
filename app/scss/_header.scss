@@ -35,7 +35,9 @@
     }
 
     @media (max-width: 992px) {
-      display: block !important;
+      display: flex !important;
+      flex-direction: column;
+      justify-content: center !important;
 
       position: fixed;
       top: 0;

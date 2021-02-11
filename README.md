@@ -12,5 +12,4 @@
 - jQuery
 - Bootstrap 4
 - Swiper Slider
-- AOS JS
 - Gulp
